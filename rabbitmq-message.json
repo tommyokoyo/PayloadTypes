@@ -1,22 +1,62 @@
 {
   "Delivery Mode":{
-    "type": "Enum (1 or 2)"
-    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+    "type": "Enum (1 or 2)",
+    "Description": "2 for \"persistent\", 1 for \"transient\". Some client libraries expose this property as a boolean or enum.",
     "Required": "Yes"
   },
-  "Delivery Mode":{
-    "type": "Enum (1 or 2)"
-    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+  "Type":{
+    "type": "String",
+    "Description": "Application-specific message type, e.g. \"orders.created\"",
+    "Required": "No"
+  },
+  "Headers":{
+    "type": "Map(String -> any)",
+    "Description": "An arbitrary map of headers with string header names",
     "Required": "Yes"
-  }
-  "Delivery Mode":{
-    "type": "Enum (1 or 2)"
-    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
-    "Required": "Yes"
-  }
-  "Delivery Mode":{
-    "type": "Enum (1 or 2)"
-    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
-    "Required": "Yes"
+  },
+  "Content-type":{
+    "type": "String",
+    "Description": "Content type, e.g. \"application/json\". Used by applications, not core RabbitMQ",
+    "Required": "No"
+  },
+  "Content-Encoding":{
+    "type": "String",
+    "Description": "Content encoding, e.g. \"gzip\". Used by applications, not core RabbitMQ",
+    "Required": "No"
+  },
+  "Message-ID":{
+    "type": "String",
+    "Description": "Arbitrary message ID",
+    "Required": "No"
+  },
+  "Correlation-ID":{
+    "type": "String",
+    "Description": "Helps correlate requests with responses",
+    "Required": "No"
+  },
+  "Reply-To":{
+    "type": "String",
+    "Description": "Carries response queue name",
+    "Required": "No"
+  },
+  "Expiration":{
+    "type": "String",
+    "Description": "Per-message TTL",
+    "Required": "No"
+  },
+  "Timestamp":{
+    "type": "Timestamp",
+    "Description": "Application-provided timestamp",
+    "Required": "No"
+  },
+  "User-ID":{
+    "type": "String",
+    "Description": "User ID, validated if set",
+    "Required": "No"
+  },
+  "App-ID":{
+    "type": "String",
+    "Description": "Application name",
+    "Required": "No"
   }
 }
