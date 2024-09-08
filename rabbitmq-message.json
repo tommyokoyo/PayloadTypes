@@ -1,0 +1,22 @@
+{
+  "Delivery Mode":{
+    "type": "Enum (1 or 2)"
+    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+    "Required": "Yes"
+  },
+  "Delivery Mode":{
+    "type": "Enum (1 or 2)"
+    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+    "Required": "Yes"
+  }
+  "Delivery Mode":{
+    "type": "Enum (1 or 2)"
+    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+    "Required": "Yes"
+  }
+  "Delivery Mode":{
+    "type": "Enum (1 or 2)"
+    "Description": "2 for persistent, 1 for transient. Some client libraries expose this property as a boolean or enum."
+    "Required": "Yes"
+  }
+}
